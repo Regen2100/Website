@@ -1,0 +1,179 @@
+<link rel = "stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" /> 
+<link rel = "stylesheet" href="css/rotate.css" type="text/css" charset="utf-8" />
+<link rel = "stylesheet" href="css/fadeout.css" type="text/css" charset="utf-8" />  
+<link rel = "stylesheet" href="css/fadein.css" type="text/css" charset="utf-8" /> 
+<link rel = "stylesheet" href="css/searchbar.css" type="text/css" charset="utf-8" /> 
+
+<html>
+	<title>Fuschia Fleet</title>
+	<head>	
+	 
+	 <style>
+		@font-face { 
+			font-family: monofurregular; 
+			src: url ('fonts/monof55-webfont.woff') format('woff') 
+		} 
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+			if(!isChrome){
+				$('#iframeAudio').remove()
+			}
+		else{
+				$('#playAudio').remove() 
+		}
+		#circle{
+			
+			background: #f9edae;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%			
+		}
+		input[type=text]
+		{
+			position: relative;
+			font-family: monofurregular, Fallback, Sans-Serif;
+			border: 2px solid #f9edae;
+			border-radius: 4px;
+			font-size: 16px;
+			background-color: #2d1628;
+			background-image: url('images/searchimage.png');
+			background-repeat: no-repeat;
+			background-position: 95%;
+			top: -34px;
+			left:  65%;
+			width: 130px;
+			-webkit-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
+		}
+		input[type=text]:focus{
+			width:10%;
+			border: 2px solid #f9bfae;
+			background-color: #fff;
+			background-image: url('images/searchimagereg.png');
+			background-repeat: no-repeat;
+			background-position: 95%;
+		}
+		
+		hr {
+			display: block;
+			height: 1px;
+			border: 0;
+			border-top: 2px solid #f9edae;
+			margin: 0.25em -6.3;
+			padding: 0;
+		}
+		hr2 {
+			display: block;
+			height: 1px;
+			border: 0;
+			border-top: 40px solid #2d1628;
+			margin: -.5em -6.3;
+			padding: 0;
+		}
+		body {
+			background-color: #592e4f;
+			font-family: monofurregular, Fallback, Sans-Serif;
+			color: #f9edae;
+			height: 99.2%;
+			width: 99.2%;
+			position: fixed;
+		}
+		h1{		
+			height: 80%;
+			width: 100%;
+			display: flex;	
+			position: fixed;	
+			align-items: center;
+			justify-content: center;
+		}
+		#movetxt {			
+			animation: move 5s; 			
+			-webkit-animation: move 5s;
+			-webkit-animation-duration: 10s; animation-duration: 10s;
+			-webkit-animation-delay: 10s; animation-delay: 10s;
+		
+		}
+		@keyframes move {
+			from {transform:translateY(0px);}
+			to {transform:translateY(200px);}
+		}
+		@webkit-keyframes move {
+			from {transform:translateY(0px);}
+			to {transform:translateY(200px);}
+		}
+		a {
+			position: relative;
+			top: -31px;			
+			height: 100%;
+			width: 100%;
+			text-decoration: none;
+		}
+		a:link
+		{
+			
+			color: #f9edae;
+		}
+		a:visited
+		{
+		
+			color: #f9edae;
+		}
+		a:hover
+		{			
+			color: #f9bfae;
+		}
+		a:active
+		{			
+			color: #f9edae;
+		}
+		
+	 </style>
+	</head>
+		
+		
+
+	<body>
+		<hr2></hr2>	
+		<hr></hr>
+		
+		<div id="fadeout" class ="fadeout">
+			<h1> Revamp in progress.. Mind the Mess. 		
+				<img class="rotate" src= "images/hourglass2.gif"/>
+				
+			</h1>
+		</div>
+			
+		<div id="fadein" class ="fadein">
+		
+			<a style= "left: 0px;" HREF="pages/games.html">Games</a>		
+			<a style= "left: 20px;" HREF="legacy/forums.html">Forums</a>
+			<a style= "left: 40px;" HREF="pages/help.html">Help</a>
+			<a style= "left: 60px;" HREF="pages/signup.html">Sign Up</a>
+			<a style= "	left: 80px;" HREF="">Wiki</a>
+			<a style= "	left: 100px;" HREF="../legacy/index.html">Looking for the old website?</a>
+			<h1>Fuschia Fleet</h1>
+			<input type="text" name="search" placeholder="Search..">
+			
+			<iframe src="music/Lights.mp3" allow="autoplay" style="display:none" id="iframeAudio"</iframe>
+			<audio autoplay loop id="myaudio">
+			<source src="music/Lights.mp3" type="audio/mp3">
+			Your browser does not support the audio element
+			</audio>
+			
+		</div>	
+			
+	</body>
+
+				<script>
+					var audio = document.getElementById("myaudio");
+					var iframeaudio = document.getElementById("iframeAudio");
+					iframeaudio.setVolume(0.05);
+					audio.volume = 1;
+				</script>
+			
+		
+</div>
+</html>
+
+
+
+

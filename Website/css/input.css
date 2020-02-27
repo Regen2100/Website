@@ -1,0 +1,110 @@
+		input{
+			position:relative;
+			align-content: center;
+			
+		}
+
+		input.signuppassword[type=password]{
+
+			margin: auto;
+			display: block;	
+			position: fixed;	
+			align-items: center;
+			justify-content: center;
+    	
+    		text-align: right;			
+			font-family: monofurregular, Fallback, Sans-Serif;
+			border: 2px solid #f9edae;
+			border-radius: 4px;
+			font-size: 20px;
+			background-color: #2d1628;				
+			top: 500px;	
+			left: 0%;		
+			width: 375px;
+			
+		}
+		input.signuppassword[type=password]:focus
+		{
+		
+			border: 2px solid #f9bfae;
+			background-color: #fff;			
+			background-repeat: no-repeat;
+			background-position: 95%;
+
+		}
+		input.signupuser[type=text]
+		{	
+			margin: auto;
+			display: block;	
+			position: fixed;	
+			align-items: center;
+			justify-content: center;
+    	
+    		text-align: right;		
+			font-family: monofurregular, Fallback, Sans-Serif;
+			border: 2px solid #f9edae;
+			border-radius: 4px;
+			font-size: 20px;
+			background-color: #2d1628;				
+			top: 450px;		
+			left: 0%;
+			width: 375px;
+			
+		}
+		input.signupuser[type=text]:focus{
+			
+			border: 2px solid #f9bfae;
+			background-color: #fff;			
+			background-repeat: no-repeat;
+			background-position: 95%;
+		}
+		input.signup[type=text]
+		{
+			margin: 0 auto 1em auto;
+			display: block;	
+			position: fixed;	
+			align-items: center;
+			justify-content: center;
+    	
+    		text-align: right;		
+			font-family: monofurregular, Fallback, Sans-Serif;
+			border: 2px solid #f9edae;
+			border-radius: 4px;
+			font-size: 20px;
+			background-color: #2d1628;				
+			top: 400px;	
+			left: 0%;
+			width: 375px;
+		
+		}
+		input.signup[type=text]:focus{
+			
+			border: 2px solid #f9bfae;
+			background-color: #fff;			
+			background-repeat: no-repeat;
+			background-position: 95%;
+		}
+		input.search[type=text]
+		{
+			font-family: monofurregular, Fallback, Sans-Serif;
+			border: 2px solid #f9edae;
+			border-radius: 4px;
+			font-size: 16px;
+			background-color: #2d1628;
+			background-image: url('../images/searchimage.png');
+			background-repeat: no-repeat;
+			background-position: 95%;
+			top: -34px;
+			left:  65%;
+			width: 130px;
+			-webkit-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
+		}
+		input.search[type=text]:focus{
+			width:10%;
+			border: 2px solid #f9bfae;
+			background-color: #fff;
+			background-image: url('../images/searchimagereg.png');
+			background-repeat: no-repeat;
+			background-position: 95%;
+		}
